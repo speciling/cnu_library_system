@@ -9,6 +9,7 @@
 
 import sys
 import service.BookService as bookService
+import service.MemberService as memberService
 
 # BookService(실제 코드) -> bookService(사용)
 
@@ -46,7 +47,7 @@ while True:  # 조건 1
     elif select_num == 4:  # 도서 반납
         pass
     elif select_num == 5:  # 회원 목록
-        pass
+        memberService.get_members()
     elif select_num == 6:  # 회원 검색
         pass
     elif select_num == 7:  # 프로그램 종료
